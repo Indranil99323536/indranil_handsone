@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace User_defined_Data
+﻿namespace User_defined_Data
 {
     class program
     {
@@ -11,7 +9,7 @@ namespace User_defined_Data
             //Class1[] std_array = new Class1[3];// array of object
             //int[] abc =new int[5];
 
-            Console.WriteLine("enter the value of W");
+            Console.WriteLine("enter the value of disk");
             int w = Convert.ToInt32(Console.ReadLine()); 
             Class1[] std_array = new Class1[w];
             Class1 student = new Class1();
@@ -48,10 +46,12 @@ namespace User_defined_Data
 
 
             //Printing
-
+            //Console.WriteLine("which student record want to display");
+            //int j=Convert.ToInt32((Console.ReadLine()));
             for (i = 0; i < w; i++)
             {
-                Console.WriteLine($"Student: (i + 1)");
+                Console.WriteLine($"Student: "+(i + 1));
+
                 Console.WriteLine($"FirstName:{std_array[i].FirstName}");
                 Console.WriteLine($"LastName:{std_array[i].LastName}");
                 Console.WriteLine($"Roll:{std_array[i].Roll}");
