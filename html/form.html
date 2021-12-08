@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .big-pic {
+            background: url(Images/image_1.jpeg);
+        }
+        input[type=text], input[type=number], input[type=text], input[type=date], input[type=password], input[type=email] {
+            width: 10%;
+            padding: 8px 16px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+            legend
+        {
+            color: cornflowerblue;
+            padding: 5px 10px;
+        }
+       
+    </style>
 <title>STUDENT FORM</title>
 
     <script type="text/javascript" src="scripts/main.js"></script>
 
 </head>
-<body>
+<body class="big-pic">
 
-<h1>THE DATABASE</h1>
+    <h1 style="background-color: lightpink;"><Center>Registration Form</h1>
 
 <form>
-    <label for="txt_FirstName">First name:</label><br>
-    <input type="text" id="txt_FirstName" value=""><br><br>
+    <fieldset>
+        <legend>Personsal Information</legend>
+        <label for="txt_FirstName">First name:</label><br>
+        <input type="text" id="txt_FirstName" placeholder="Your First name.." value=""><br><br>
 
 
-    <label for="txt_LastName">Last name:</label><br>
-    <input type="text" id="txt_LastName" value=""><br><br>
+        <label for="txt_LastName">Last name:</label><br>
+        <input type="text" id="txt_LastName" placeholder="Your Last name.." value=""><br><br>
 
-    <label for="txt_SWON">SWON:</label><br>
-    <input type="text" id="txt_SWON" value=""><br><br>
+        <label for="txt_SWON">SWON:</label><br>
+        <input type="text" id="txt_SWON" placeholder="Your SWON Number.." value=""><br><br>
 
-    <label for="txt_DateofJoining">Date of Joining:</label><br>
-    <input type="date" id="txt_DateofJoining" value=""><br><br>
+        <label for="txt_DateofJoining">Date of Joining:</label><br>
+        <input type="date" id="txt_DateofJoining" placeholder="Your Date of joiining.." value=""><br><br>
 
-    <label for="txt_Roll_NO">Roll_NO:</label><br>
-    <input type="number" id="txt_Roll_NO" value=""><br><br>
+        <label for="txt_Roll_NO">Roll_NO:</label><br>
+        <input type="number" id="txt_Roll_NO" placeholder="Your Roll_NO" value=""><br><br>
 
-    <label for="txt_Personsal ID">Personsal ID:</label><br>
-    <input type="email" id="txt_Personsal ID" value=""><br><br>
-    <input type="submit" onclick="ShowFormValue()">
+        <label for="txt_Personsal ID">Personsal ID:</label><br>
+        <input type="email" id="txt_Personsal ID" placeholder="Your Personal ID.." value=""><br><br>
+
+        <label for="txt_Password">PassWord:</label><br>
+        <input type="password" id="txt_Password" placeholder="Your Password.." value=""><br><br>
+
+
+        <input type="submit" onclick="ShowFormValue()">
+    </fieldset>
 </form> 
 
 </body>
