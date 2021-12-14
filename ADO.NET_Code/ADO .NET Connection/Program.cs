@@ -11,7 +11,7 @@ namespace ADO.NetConnection
         static void Main(string[] args)
         {
             var dal = new StudentDAL();
-
+            //testing
             //dal.DeleteStudent(785);
             var studentList = new List<Student>();
             studentList = dal.GetStudents();
@@ -38,8 +38,8 @@ namespace ADO.NetConnection
                 RollNo = 2,
                 Marks = 104.12
             });
-            int size = 0;
-            for (; ; )
+            int size = 0; 
+            for (; ; ) 
             {
                 Console.WriteLine("1. Enter inputs");
                 Console.WriteLine("2. Print Data");
